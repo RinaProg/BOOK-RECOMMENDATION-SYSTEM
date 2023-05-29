@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}" type="text/css" media="all" />
+    <link rel="icon" type="image/png" sizes="48x48" href="{{ url_for('static', filename='img/Rina_fav.ico')}}">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<!--contact-bg.gif-->
+<body background="{{ url_for('static',filename ='img/body-2.jpg')}}">
+<div class="topleft">
+    <a href="/"><button class="w3-button w3-deep-purple">Home</button></a>
+</div>
+    <div class="main">
+        <div class="register">
+            <h2>Contact Us</h2>
+
+            <form id="register" action="/contact" method="post">
+
+                <label style="margin-left:4px">Enter Name</label><br>
+                <input style="margin-top:2px" type="text" id="name" name="name" required>
+                <br>
+                <label style="margin-left:4px">Email</label><br>
+                <input style="margin-top:10px" type="email" id="email" name="email" required>
+                <br>
+                <label style="margin-left:4px">Phone</label><br>
+                <input style="margin-top:10px" type="tel" id="phone" name="phone">
+                <br>
+                <label style="margin-left:4px">Message</label><br>
+                <textarea style="margin-top:10px" id="message" name="message" rows="2" cols="21"></textarea>
+
+                <br>
+
+                <input style="margin-top:10px" type="submit" value="Send" name="submit" id="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

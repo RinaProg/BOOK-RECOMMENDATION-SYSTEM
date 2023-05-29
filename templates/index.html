@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Recommendation System</title>
+    <link rel="icon" type="image/png" sizes="48x48" href="{{ url_for('static', filename='img/Rina_fav.ico')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+    .text-Black{
+    color: rgb(23, 23, 23)
+    }
+    .text-red{
+    color: rgb(53, 138, 73)
+    }
+     /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;}
+    }
+    #div1{
+      background-color:#555;
+      width:33.33%;
+      float:left;
+
+    }
+    #div2{
+      background-color:#555;
+      width:33.33%;
+      float:right;
+
+    }
+    #div3{
+      background-color:#555;
+      width:33.33%;
+      margin: 0 auto;
+}
+.checked {
+  color: rgb(255, 115, 0);
+}
+.view {
+  color: rgb(59, 57, 54);
+}
+</style>
+<body background="{{ url_for('static',filename ='img/body-2.jpg')}}">
+        <nav class="navbar" style="background-color:#6d0d0d">
+            <a class="navbar-brand" style="font-size:25px;font-weight:bold">B.R.S</a>
+            <ul class="nav navbar-nav">
+                <li><a href="/">TOP</a></li>
+                 <li><a href="/recommend">Search Book</a></li>
+                 <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <u><h1 class="text-red" style="font-style:italic">TOP 50 Trending Books </h1></u>
+                </div>
+
+                {% for i in range(book_name|length) %}
+                    <div class="col-md-3" style="margin-top:50px">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="card-img-top" src="{{image[i]}}">
+                                <p class="text-Black" style="font-size:15px;font-weight:bold">{{ book_name[i] }}</p>
+                                <h5 class="text-Black" style="font-style: italic">{{ author[i] }}</h5>
+                                <h5 class="text-Black" style="font-style: italic">Views - {{ votes[i] }} <span class="fa fa-eye view"></span></h5>
+                                <h5 class="text-Black" style="font-style: italic">Rating - {{ rat[i] }} <span class="fa fa-star checked"></span></h5>
+                                
+                            </div>
+                        </div>
+                    </div>
+                {% endfor%}
+            </div>
+        </div>
+
+        <footer>
+  <div id="div1">
+    <p>&nbsp;</p>Registered Office Address: <br> Sonarpur, <br>South 24 PGS,Sonarpur,<br> 700150
+
+  </div >
+  <div id="div2">
+    <p>&nbsp;</p>
+    Whatsup: +91 9163166660<br>
+    <a href=“tel:6290120000”>Phone : +91 9163166660</a><br>
+    <a href=“mail:nathrina100@gmail@gmail.com”>mail : nathrina100@gmail.com</a><br>
+    Toll Free No.: 1800-252-0000
+
+  </div>
+  <div id="div3">
+    <p>&nbsp;</p>&#x2713;Category <br>&#x2713;Reviews<br>&#x2713;Booker Prize<br>&#x2713;Awards
+  </div>
+</footer>
+</body>
+</html>
+
