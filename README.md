@@ -1,5 +1,5 @@
 ## BOOK-RECOMMENDATION-SYSTEM
-Book Recommendation System Using Collaborative Filtering
+Book Recommendation System Using Collaborative Filtering(ML-Project)
 ## INTRODUCTION
 The main purpose of a Recommendation system it'll suggest items to users effortlessly making their existence less complicated.
 Today the amount of information with inside the internet very unexpectedly and people want few gadgets to are trying to find out and get right of entry to suitable information. 
