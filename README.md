@@ -12,6 +12,7 @@ With the assistance of statistics sets and system learning we believe we can sel
 Therefore here we use a `Collaborative Filtering System` introduced by  `Machine Learning`.
 
 ## OUTPUT
-![](https://github.com/RinaProg/BOOK-RECOMMENDATION-SYSTEM/assets/122221586/1b9a812f-93eb-4d5d-9eb1-3796c90fbe43)
+![](https://github.com/RinaProg/BOOK-RECOMMENDATION-SYSTEM/assets/122221586/3f3b3707-530d-4a89-9cd7-72174bdb460a)
+<br>
 ![](https://github.com/RinaProg/BOOK-RECOMMENDATION-SYSTEM/assets/122221586/c603d364-ef5e-44b0-8212-e321c755d159)
 
